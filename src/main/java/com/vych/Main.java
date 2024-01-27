@@ -2,6 +2,7 @@ package com.vych;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Thread waitThread = new Thread(new WaitThread());
+        waitThread.start();
     }
 }
